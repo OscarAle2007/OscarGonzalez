@@ -1,0 +1,96 @@
+body {
+	font-family: sans-serif;
+	color: #333;
+	background: #f0f0f0;
+	font-size: 1.2rem;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 1.3em;
+}
+
+h2 {
+	font-size: 1.6rem;
+	line-height: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+	ma
+}
+
+.container {
+	width: 100%;
+	max-width: 1025px;
+	margin: 0 auto;
+}
+
+.header {
+	background: #2DBFCB;
+	color: white;
+	padding: 1rem 0;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+}
+
+.logo-nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	border-radius: 4px;
+}
+
+.navigation label {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	transition: all 0.5s linear;
+	border-radius: 5px;
+}
+
+.navigation label:hover {
+	background: #24A2AC;
+}
+
+.content {
+	position: relative;	
+}
+
+.content div {
+	position: absolute;
+	line-height: 1.8;
+	transition: all 600ms ease;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0.90);
+	padding: 30px;
+	padding-bottom: 40px;
+}
+
+#radio1, #radio2, #radio3, #radio4
+{
+	display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+
+{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
