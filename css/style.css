@@ -23,8 +23,8 @@ p {
 }
 
 .container {
-	width: 100%;
-	max-width: 1025px;
+	width: 85%;
+	max-width: 850px;
 	margin: 0 auto;
 }
 
@@ -43,10 +43,15 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;;
 }
 
 .logo {
 	border-radius: 4px;
+}
+
+.menu-icon{
+	display: none;
 }
 
 .navigation label {
@@ -64,6 +69,9 @@ p {
 }
 
 .content {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;
 	position: relative;	
 }
 
@@ -94,3 +102,30 @@ p {
 	transform: scale(1);
 }
 
+@media only screen and (max-width: 767px){
+.menu-icon {
+	display: block;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+	.navigation {
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	.navigation label{
+		display: none;
+	}
+
+	.navigation .show{
+		display: block;
+	}
+
+	.navigation label {
+		display: none;
+		padding: 0.5rem 0;
+		transition: all 0.5s linear;
+		border-radius: 5px;
+	}
+}
